@@ -1,0 +1,36 @@
+#pagina{
+  position: relative;
+  width: 1200px;
+  height: 520px;
+ 
+}
+
+#alta{
+  position: relative;
+  left: auto;
+  width: 200px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+#menu{
+
+  position: absolute;
+  left: auto;
+  width: 200px;
+  height: 520px;
+  background-color: rgb(4, 195, 253);
+}
+
+a{
+  text-decoration: none;
+}
+
+#container{
+  position: absolute;
+  left: 250px;
+  width: 220px;
+  height: 600px; 
+}
