@@ -1,8 +1,24 @@
-<p>Gestión de producto</p>
+<h1>Gestión de producto</h1>
 
-<form action="post" id="form">
-    <label for="alta">Alta de usuario:</label><input type="text">
-    <label for="detalles">Detalles</label><input type="text">
-    <button><a routerLink=""></a>ENVIAR</button>
 
-</form> 
+    <p-table>
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Nombre</th>
+                <th>Imagen</th>
+                <th>Precio</th>
+                <th>descripcion</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-products class="tabla">
+            <tr>
+                <td>{{products.name}}</td>
+                <td>{{products.img}}</td>
+                <td>{{products.price}}</td>
+                <td>{{products.descripcion}}</td>
+                <button type="submit" value="cambiar" ><a routerLink="/users">cambiar</a></button>
+                <button type="submit" value="eliminar">eliminar</button>
+            </tr>
+        </ng-template>
+    </p-table>
+

@@ -1,7 +1,8 @@
 #pagina{
   position: relative;
   width: 1200px;
-  height: 520px;
+  height: 570px;
+
  
 }
 
@@ -16,7 +17,7 @@
 }
 
 #menu{
-
+  
   position: absolute;
   left: auto;
   width: 200px;
@@ -31,6 +32,6 @@ a{
 #container{
   position: absolute;
   left: 250px;
-  width: 220px;
+  width: 600px;
   height: 600px; 
 }
