@@ -1,10 +1,20 @@
-<p>ALTA DE USUARIOS</p>
+<h1>ALTA DE USUARIOS</h1>
 
-<form action="" method="get">
-    <label for="username">Nombre</label>
-    <input type="text">
-    <label for="password">contraseña</label>
-    <input type="password">
-
-    <button type="submit">AÑADIR</button>
-</form>
+<p-table [value]="user">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Contraseña</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-user>
+        <tr>
+            <td>{{user.id}}</td>
+            <td>{{user.username}}</td>
+            <td>{{user.password}}</td>
+            <a href="" class="btn btn-primary">AÑADIR</a>
+            <a href="" class="btn btn-dager" (click)="delete(user.id)">ELIMINAR</a>
+        </tr>
+    </ng-template>
+</p-table>
